@@ -47,7 +47,7 @@ Here's an example app that presents two scenes: an onboarding window and a regul
     }
 
 
-But once your app is in accessory mode, how can you get it back? This is where `bringBackFromBackground` comes in. It's an environment value that provides a frunction that will return the app's actiavtion policy to `.regular` and bring it to the front.
+But once your app is in accessory mode, how can you get it back? This is where `bringBackFromBackground` comes in. It's an environment value that provides a frunction that will return the app's activation policy to `.regular` and bring it to the front.
 
 Here's the `MenuBarView' from the example above:
 

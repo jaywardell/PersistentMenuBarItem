@@ -59,7 +59,7 @@ Here's the `MenuBarView` from the example above:
         
         var body: some View {
             Button("New Window…", action: newWindowButtonTapped)
-                // you will this if you have set the
+                // you will need this if you have set the
                 // menuBarExtraStyle to .window
                 // otherwise it's not necessary
                 .contentShape(.rect)
@@ -67,7 +67,7 @@ Here's the `MenuBarView` from the example above:
             Divider()
 
             Button("Show Onboarding View…", action: onboardingButtonTapped)
-            // you will this if you have set the
+            // you will need this if you have set the
             // menuBarExtraStyle to .window
             // otherwise it's not necessary
                 .contentShape(.rect)
@@ -77,7 +77,7 @@ Here's the `MenuBarView` from the example above:
             Button("Quit") {
                 NSApplication.shared.terminate(self)
             }
-            // you will this if you have set the
+            // you will need this if you have set the
             // menuBarExtraStyle to .window
             // otherwise it's not necessary
             .contentShape(.rect)

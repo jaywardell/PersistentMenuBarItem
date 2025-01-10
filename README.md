@@ -9,7 +9,7 @@ PeristentMenuBarItem lets you hide your app from the Dock and App Switcher if al
 ## Usage:
 
 The most important thing in this package is the `allowsAccessoryModeWhenDismissed()` modifier.
-Attach this to a View and it will report its window to a singleton `ApplicationAccessoryModeManager` for tracking.
+Attach this to a View and it will report its window to a singleton `ApplicationAccessoryModeManager` for tracking. (actually that's just an implementation detail. You don't have to worry about `ApplicationAccessoryModeManager` at all.)
 If all your windows (modified by `allowsAccessoryModeWhenDismissed()`) are closed by the user, then `ApplicationAccessoryModeManager` will change your app's activation policy to `.accessory` (see https://developer.apple.com/documentation/appkit/nsapplication/activationpolicy-swift.enum)
 
 Here's an example app that presents two scenes: an onboarding window and a regular window that can have multiple instances:

@@ -105,4 +105,16 @@ For example, the example app above modifies its MenuBarView with `canBringAppBac
     MenuBarView()
         .canBringAppBackFromAccessoryMode()
 
-And that's really all there is to it.
+## Testing in XCode
+
+When you're testing this, XCode will sometimes make your life harder. For some reason, attempts to brig an app to the foreground while XCode is in the foreground don't always work as expected if you're running the app from XCode.
+
+To avoid this, the following testing procedure is recommended:
+
+1) run your app from XCode
+2) close all windows to verify that the app becomes a background app
+3) switch to any other app besides XCode
+4) select the menu bar extra and choose a button that will bring the app back to the foreground.
+
+I mention this here because I wasted too much time thinking I was doing something wrong.  
+

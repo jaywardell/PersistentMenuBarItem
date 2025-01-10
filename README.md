@@ -58,29 +58,18 @@ Here's the `MenuBarView` from the example above:
         @Environment(\.bringBackFromBackground) var bringBackFromBackground
         
         var body: some View {
+
             Button("New Window…", action: newWindowButtonTapped)
-                // you will need this if you have set the
-                // menuBarExtraStyle to .window
-                // otherwise it's not necessary
-                .contentShape(.rect)
 
             Divider()
 
             Button("Show Onboarding View…", action: onboardingButtonTapped)
-            // you will need this if you have set the
-            // menuBarExtraStyle to .window
-            // otherwise it's not necessary
-                .contentShape(.rect)
 
             Divider()
 
             Button("Quit") {
                 NSApplication.shared.terminate(self)
             }
-            // you will need this if you have set the
-            // menuBarExtraStyle to .window
-            // otherwise it's not necessary
-            .contentShape(.rect)
         }
         
         private func reactivateApp() {

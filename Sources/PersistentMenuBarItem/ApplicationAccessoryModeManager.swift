@@ -8,7 +8,6 @@
 import AppKit
 import SwiftUI
 
-@available(macOS 10.14, *)
 @MainActor
 fileprivate final class ApplicationAccessoryModeManager: Sendable {
     
@@ -54,7 +53,6 @@ fileprivate final class ApplicationAccessoryModeManager: Sendable {
 
 // MARK: - Public
 
-@available(macOS 10.15, *)
 public extension EnvironmentValues {
     
     
@@ -69,7 +67,6 @@ public extension EnvironmentValues {
     @Entry var bringBackFromBackground: () -> Void = {}
 }
 
-@available(macOS 10.15, *)
 public extension View {
 
     /// add this modifer to any view to pass a bringBackFromBackground

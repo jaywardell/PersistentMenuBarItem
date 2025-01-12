@@ -8,23 +8,23 @@
 import AppKit
 import SwiftUI
 
-@available(macOS 10.15, *)
+@available(macOS 10.14, *)
+@MainActor
 fileprivate final class ApplicationAccessoryModeManager: Sendable {
     
-    @MainActor
     fileprivate var windowNumbers = Set<Int>()
     
     fileprivate static let shared = ApplicationAccessoryModeManager()
     private init() {}
     
     fileprivate func remember(_ windowNumber: Int) {
-        Task { @MainActor in
+        Task {
             windowNumbers.insert(windowNumber)
         }
     }
     
     fileprivate func forget(_ windowNumber: Int) {
-        Task { @MainActor in
+        Task {
             
             windowNumbers.remove(windowNumber)
             

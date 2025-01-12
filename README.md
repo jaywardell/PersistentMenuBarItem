@@ -1,6 +1,6 @@
 #  PeristentMenuBarItem
 
-It's a pretty common thing letely for an app to show a Menu Bar Extra so that the user can quickly get back to your app when they're doing something else.
+It's a pretty common thing letely for macOS app to show a Menu Bar Extra so that the user can quickly get back to your app when they're doing something else.
 
 But some apps are upping the game by automatically moving themselves to the background if they have no windows to show. To the user, this is almost as if the app disappears into the status bar section of the menu bar when it's no longer being used.
 
